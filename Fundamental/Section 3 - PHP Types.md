@@ -48,7 +48,7 @@ The `is_int()` built-in function returns `true` if a value (or a variable) is an
 
 ```php
 $amount = 100;
-echo is_int($amount);
+var_dump(is_int($amount));
 ```
 
 Output:
@@ -75,7 +75,7 @@ To check if a value is a floating-point number, you use the `is_float()` or `is_
 
 ```php
 <?php
-echo is_float(0.5);
+var_dump(is_float(0.5));
 ```
 
 Output:
@@ -114,7 +114,7 @@ To check if a value is a Boolean, you can use the built-in function `is_bool()`.
 
 ```php
 $is_email_valid = false;
-echo is_bool($is_email_valid);
+var_dump(is_bool($is_email_valid));
 ```
 When you use the `echo` to show a boolean value, it’ll show `1` for `true` and nothing for false, which is not intuitive. To make it more obvious, you can use the `var_dump()` function. For example:
 
