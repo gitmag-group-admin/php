@@ -149,8 +149,8 @@ For example, the following shows the value of the ```$title``` variable in the h
 </head>
 <body>
     <?php
-		$title = 'PHP is awesome!';
-	?>
+	$title = 'PHP is awesome!';
+    ?>
     
     <h1><?= $title; ?></h1>
 </body>
