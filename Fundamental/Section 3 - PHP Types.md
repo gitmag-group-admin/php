@@ -352,10 +352,10 @@ The `(int)` operator casts a float to an integer. It’ll round the result towar
 
 ```php
 <?php
-echo (int)12.5 . '<br>'; // 12
-echo (int)12.1 . '<br>'; // 12
-echo (int)12.9 . '<br>'; // 12
-echo (int)-12.9 . '<br>'; // -12
+echo (int) 12.5 . '<br>'; // 12
+echo (int) 12.1 . '<br>'; // 12
+echo (int) 12.9 . '<br>'; // 12
+echo (int) -12.9 . '<br>'; // -12
 ```
 Suppose you have a string and want to cast it as an integer:
 
@@ -371,7 +371,7 @@ If a string is numeric or leading numeric, then the `(int)` will cast it to the 
 
 ```php
 <?php
-$amount =  (int)'100 USD';
+$amount =  (int) '100 USD';
 echo $amount; // 100
 ```
 
@@ -382,7 +382,7 @@ Note that the `(int)` operator casts null to zero `0`. For example:
 ```php
 <?php
 $qty = null;
-echo (int)$qty; // 0
+echo (int) $qty; // 0
 ```
 
 ### Cast to a float
@@ -390,7 +390,7 @@ To cast a value to a float, you use the `(float)` operator. For example:
 
 ```php
 <?php
-$amount = (float)100;
+$amount = (float) 100;
 echo $amount; // 100
 ```
 
@@ -402,7 +402,7 @@ The following example uses the `(string)` operator to cast the number 100 to a s
 ```php
 <?php
 $amount = 100;
-echo (string)$amount . " USD"; // 100 USD
+echo (string) $amount . " USD"; // 100 USD
 ```
 
 You don’t need to use the `(string)` operator in this case because PHP has a feature called type juggling that implicitly converts the integer to a string:
@@ -418,7 +418,7 @@ The `(string)` operator converts the true value to the string `"1"` and `false` 
 ```php
 <?php
 $is_user_logged_in = true;
-echo (string)$is_user_logged_in; // 1
+echo (string) $is_user_logged_in; // 1
 ```
 
 Output:
