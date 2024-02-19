@@ -106,7 +106,6 @@ PHP treats the following values as false:
 -   The empty string ("", '') and the string “0”.
 -   The empty array (array() or []).
 -   The null.
--   The SimpleXML objects created from attributeless empty elements.
 
 The values that are not one of these falsy values above are `true`.
 
