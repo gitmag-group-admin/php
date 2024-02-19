@@ -152,11 +152,6 @@ Suppose you have a variable `$name`.
 <?php
 $name = 'John';
 ```
-And you want to show a message that displays the following:
-
-```php
-Hello John
-```
 
 To do it, you can use the concatenate operator `.` to concatenate two strings:
 
@@ -165,12 +160,23 @@ To do it, you can use the concatenate operator `.` to concatenate two strings:
 $name = 'John';
 echo 'Hello ' . $name;
 ```
+And you want to show a message that displays the following:
+
+```
+Hello John
+```
+
 However, if you use a double-quoted string, you can place the `$name` variable inside the string as follows:
 
 ```php
 <?php
 $name = 'John';
 echo "Hello $name";
+```
+And you want to show a message that displays the following:
+
+```
+Hello John
 ```
 
 When evaluating a double-quoted string, PHP replaces the value of any variable that you place inside the string. This feature is called variable interpolation in PHP.
