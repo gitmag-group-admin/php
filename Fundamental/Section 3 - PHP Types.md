@@ -293,10 +293,10 @@ An object also has behaviors, which are known as methods. For example, a person 
 
 To learn more about objects, check out the object tutorial.
 
-#### Special types
+### Special types
 PHP has two special types: `null` and `resource`
 
-##### Null
+#### Null
 The `null` type has one value called null that represents a variable with no value.
 
 A variable is null when you assign null to it like this:
@@ -317,7 +317,7 @@ unset($email);
 var_dump($email); // NULL
 ```
 
-###### PHP NULL and case-sensitivity
+##### PHP NULL and case-sensitivity
 PHP keywords are case-insensitive. Therefore, NULL is also case-insensitive. It means that you can use `null`, `Null`, or `NULL` to represent the `null` value. For example:
 
 ```php
@@ -327,7 +327,7 @@ $first_name = Null;
 $last_name = NULL;
 ```
 
-###### Testing for NULL
+##### Testing for NULL
 To check if a variable is `null` or not, you use the `is_null()` function. The `is_null()` function returns `true` if a variable is `null`; otherwise, it returns `false`. For example:
 
 ```php
@@ -340,7 +340,7 @@ var_dump(is_null($home)); // bool(false)
 ```
 
 
-##### Resource
+#### Resource
 The resource type holds a reference to an external resource, e.g. a filehandle or a database connection.
 
 ## PHP Type Casting
