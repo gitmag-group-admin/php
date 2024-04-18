@@ -55,13 +55,13 @@ Example:
 ```php
 $scores = [1, 2, 3];
 $scores[] = 4;
-var_dump($scores);
+print_r($scores);
 ```
 
 ```php
 $scores = [1, 2, 3];
 $scores[3] = 4;
-var_dump($scores);
+print_r($scores);
 ```
 
 ### Changing array elements
@@ -74,7 +74,7 @@ Example:
 ```php
 $scores = [1, 2, 3];
 $scores[0] = 0;
-var_dump($scores);
+print_r($scores);
 ```
 
 ### Removing array elements
@@ -82,7 +82,7 @@ var_dump($scores);
 ```php
 $scores = [1, 2, 3];
 unset($scores[1]);
-var_dump($scores);
+print_r($scores);
 ```
 
 ### Getting the size of an array
@@ -96,12 +96,12 @@ echo count($scores);                        // 5
 ## PHP Associative Arrays
 
 ```php
-$html = []
+$html = [];
 
 $html['title'] = 'PHP Associative Arrays';
 $html['description'] = 'Learn how to use associative arrays in PHP';
 
-var_dump($html);
+print_r($html);
 ```
 
 Output:
@@ -187,10 +187,10 @@ $tasks = [
     ['Learn PHP programming', 2],
     ['Practice PHP', 2],
     ['Work', 8],
-    ['Do exercise' 1],
+    ['Do exercise', 1],
 ];
 
-var_dump($tasks);
+print_r($tasks);
 ```
 
 ## Array functions
@@ -219,7 +219,7 @@ $cities = [
 
 array_unshift($cities, 'Mashhad');
 
-var_dump($cities);
+print_r($cities);
 ```
 
 ```php
@@ -231,7 +231,7 @@ $cities = [
 
 array_unshift($cities, 'Mashhad', 'Tabriz', 'Ahvaz');
 
-var_dump($cities);
+print_r($cities);
 ```
 
 Prepending an element to the beginning of an associative array:
@@ -246,7 +246,7 @@ $colors = [
 
 $colors = ['black' => '#000000'] + $colors;
 
-var_dump($colors);
+print_r($colors);
 ```
 
 ### PHP array_push()
@@ -273,7 +273,7 @@ $numbers = [1, 2, 3];
 
 array_push($numbers, 4, 5);
 
-var_dump($numbers);
+print_r($numbers);
 ```
 
 Push an element to the end of an associative array:
@@ -286,7 +286,7 @@ $countries = [
 
 $countries['Syria'] = 'Damascus';
 
-var_dump($countries);
+print_r($countries);
 ```
 
 ### PHP array_pop()
@@ -304,8 +304,8 @@ $numbers = [1, 2, 3];
 
 $last_number = array_pop($numbers);
 
-echo $last_number;                          // 3
-var_dump($numbers);
+echo $last_number . "\n";                          // 3
+print_r($numbers);
 ```
 
 ### PHP array_shift()
@@ -322,8 +322,8 @@ Example:
 $numbers = [1, 2, 3];
 $first_number = array_shift($numbers);
 
-echo $first_number;
-var_dump($numbers)
+echo $first_number . "\n";
+print_r($numbers);
 ```
 
 ### PHP array_keys
@@ -346,14 +346,14 @@ Example:
 $numbers = [10, 20, 30];
 $keys = array_keys($numbers);
 
-var_dump($keys);
+print_r($keys);
 ```
 
 ```php
 $numbers = [10, 20, 30];
 $keys = array_keys($numbers, 20);
 
-var_dump($keys);
+print_r($keys);
 ```
 
 ```php
@@ -364,7 +364,7 @@ $user = [
 ];
 $properties = array_keys($user);
 
-var_dump($properties);
+print_r($properties);
 ```
 
 ```php
@@ -375,7 +375,7 @@ $user = [
 ];
 $properties = array_keys($user, 1);
 
-var_dump($properties);
+print_r($properties);
 ```
 
 ```php
@@ -386,7 +386,7 @@ $user = [
 ];
 $properties = array_keys($user, 1, true);
 
-var_dump($properties);
+print_r($properties);
 ```
 
 ### PHP array_key_exists()
@@ -493,8 +493,8 @@ The `array_reverse()` function has two parameters:
 $numbers = [10, 20, 30];
 $reversed = array_reverse($numbers);
 
-var_dump($reversed);
-var_dump($numbers);
+print_r($reversed);
+print_r($numbers);
 ```
 
 ```php
@@ -505,10 +505,10 @@ $book = [
 ];
 
 $unpreserved = array_reverse($book);
-var_dump($unpreserved);
+print_r($unpreserved);
 
 $preserved = array_reverse($book, true);
-var_dump($preserved);
+print_r($preserved);
 ```
 
 ### PHP array_merge()
@@ -527,7 +527,7 @@ $client_side = ['JavaScript', 'CSS', 'HTML'];
 
 $full_stack = array_merge($server_side, $client_side);
 
-var_dump($full_stack);
+print_r($full_stack);
 ```
 
 ```php
@@ -546,7 +546,7 @@ $after = [
 
 $skills = array_merge($before, $after);
 
-var_dump($skills);
+print_r($skills);
 ```
 
 ## PHP Spread Operator
@@ -563,10 +563,10 @@ Example:
 $numbers = [4, 5];
 
 $scores1 = [1, 2, 3, ...$numbers];
-var_dump($scores1);
+print_r($scores1);
 
 $scores2 = [...$numbers, 3, 4];
-var_dump($scores2);
+print_r($scores2);
 ```
 
 ```php
@@ -574,5 +574,5 @@ $even = [2, 4, 6];
 $odd = [1, 2, 3];
 $all = [...$odd, ...$even];
 
-var_dump($all);
+print_r($all);
 ```
