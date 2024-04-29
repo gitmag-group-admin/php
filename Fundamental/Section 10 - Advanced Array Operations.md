@@ -1,4 +1,4 @@
-# Section 9 - Variable constructs
+# Section 10 - Advanced Array Operations
 
 ## PHP array_map
 
@@ -31,11 +31,11 @@ Example:
 ```php
 $people = ['ali', 'reza', 'mohammad', 'hossein'];
 
-$newArray = array_walk($people , function ($value, $key) {
+$result = array_walk($people , function ($value, $key) {
 	echo "index: {$key} is {$value}\n";
 });
 
-var_dump($newArray);
+var_dump($result);
 
 // foreach($people as $key => $value) {
 // 	echo "index: {$key} is {$value}\n";
