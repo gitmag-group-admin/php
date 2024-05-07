@@ -33,7 +33,7 @@ echo $result;                           // PHP
 // $result = substr($str, 3, 3); 
 // echo $result;                           // sub
 
-// $result = substr($s, -6);
+// $result = substr($str, -6);
 // echo $result;                           // string
 ```
 
@@ -57,7 +57,7 @@ echo $position;                         // 3
 // echo $position;                         // 16
 
 // $position = strpos($str, 'dooooo', 4);
-// echo $position;                         // false
+// var_dump($position);                         // false
 
 // $position = strpos($str, 'To');
 // echo $position;                         // 0
@@ -225,7 +225,6 @@ Example:
 
 ```php
 $haystack = 'PHP is cool.';
-$needle = 'PHP';
 
 $result = str_contains($haystack, 'PHP');
 var_dump($result);
@@ -271,7 +270,7 @@ Example:
 
 ```php
 $first_name = 'sohrab';
-$last_name = 'azinfar'
+$last_name = 'azinfar';
 
 echo ucfirst($first_name) . ' ' . ucfirst($last_name); 
 ```
