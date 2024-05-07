@@ -20,7 +20,7 @@ If a form uses the POST method, the web browser will include the form data in th
 <form action="form.php" method="post">
     <div>
         <label for="name">Name:</label>
-        <input type="name" id="name" name="name" />
+        <input type="text" id="name" name="name" />
     </div>
     <button type="submit">Submit</button>
 </form>
