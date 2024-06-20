@@ -1,4 +1,4 @@
-# Section 16 - Working with Files
+# Section 15 - Working with Files
 
 ## PHP Open File
 
